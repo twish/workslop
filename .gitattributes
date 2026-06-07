@@ -1,0 +1,14 @@
+# Normalize line endings across machines (Windows ↔ macOS/Linux).
+# Store everything as LF in the repo; check out native on each platform.
+* text=auto eol=lf
+
+# Explicit: shell scripts must stay LF even on Windows checkouts.
+*.sh text eol=lf
+
+# Binary types Git should never touch.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.pen binary
